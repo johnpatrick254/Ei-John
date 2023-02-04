@@ -10,16 +10,31 @@
         top:0;
       }
     
+      header {
+        background-color: papayawhip;
+      }
       #header-img{
         height: 50px;
      }
 
+     .nav-link{
+      font-size: larger;
+      text-decoration: none;
+      color: black;
+     }
+
+     .nav-link:hover{
+      text-decoration: underline;
+     }
+     
       #nav-bar{
       margin: 2%;
       display: inline-block;
-      position: relative;
-      left: 50%;
-
+      position: fixed;
+      right: 0 ;
+      top: 0;
+      gap: 20px;
+      display: flex;
       }
       form{
         display: flex;
@@ -29,6 +44,22 @@
   body {
     background-color: lightgreen;
   }
+}
+
+video{
+  position: absolute;
+    right: 0;
+    top: 20px;
+}
+#video-container {
+  position: relative;
+}
+form {
+  width: 250px;
+}
+
+#product-text {
+  font-size: large;
 }
     </style>
   </head>
@@ -56,19 +87,22 @@
             <a href="#form" class="nav-link">form</a>
       </nav>
     </header>
-    <video id="video" width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
+    <div id="video-container">
+      <video id="video" width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    </div>
 
+    <p id="product-text">This will make the best product. Start now: </p>
 <form action ="https://www.freecodecamp.com/email-submit" id="form" method ="post">
   <input name="email" id="email" placeholder = "Enter email" type ="email"></input>
   <input id = "submit" type="submit"></input>
   </form>
 
   <footer id="footer">
-    footer
+    Contact US
     </footer>
     <script  src="js/index.js"></script>
   </body>
