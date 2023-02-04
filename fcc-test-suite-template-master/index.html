@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      nav {
+        position: fixed;
+        top:0;
+      }
+      form{
+        display: flex;
+        flex-direction: column
+      }
+      @media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+    </style>
   </head>
 
   <body>
@@ -21,7 +36,28 @@
     - The freeCodeCamp Team
 
     -->
-    <h1>Hello World</h1>
+    <header id="header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzZ2ULnpvAbAOLBJiKg8Z2zvZ0FqWHAw7J8XS0cJ0Mg&s" id="header-img">
+      <nav id="nav-bar">
+        <a href="#footer" class="nav-link">footer</a>
+          <a href="#video" class="nav-link">video</a>
+            <a href="#form" class="nav-link">form</a>
+      </nav>
+    </header>
+    <video id="video" width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<form action ="https://www.freecodecamp.com/email-submit" id="form" method ="post">
+  <input name="email" id="email" placeholder = "Enter email" type ="email"></input>
+  <input id = "submit" type="submit"></input>
+  </form>
+
+  <footer id="footer">
+    footer
+    </footer>
     <script  src="js/index.js"></script>
   </body>
 </html>
